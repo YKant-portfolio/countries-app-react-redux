@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-// import { positionReducer } from "./positions/positions-reducer";
+import { themeReduser } from "./theme/theme-reducer";
 
 export const rootReducer = combineReducers({
-	// positions: positionReducer,
+	theme: themeReduser,
 });
