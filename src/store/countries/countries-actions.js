@@ -17,8 +17,6 @@ const setError = (error) => ({
 });
 
 export const loadCoutries = () => (dispatch, _, { client, api }) => { // client:axios, api: all config
-	console.log(loadCoutries);
-
 	dispatch(setLoading());
 	client.get(api.ALL_COUNTRIES)
 		.then(({ data }) => dispatch(setCountries(data)))
