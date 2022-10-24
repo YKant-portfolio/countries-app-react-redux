@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { legacy_createStore as createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import throttle from 'lodash.throttle';
 
 import { rootReducer } from './root-reducer';
 import * as api from '../config';

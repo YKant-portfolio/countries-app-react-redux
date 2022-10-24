@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { selectCoutriesInfo, selectVisibleCoutries } from '../store/countries/countries-selector';
 import { loadCoutries } from '../store/countries/countries-actions';
 
-import { selectSearch, selectControls, selectRegion } from '../store/controls/controls-selector';
+import { selectControls } from '../store/controls/controls-selector';
 
 export const HomePage = () => {
 	const navigate = useNavigate();

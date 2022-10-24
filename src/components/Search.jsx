@@ -38,13 +38,15 @@ export const Search = () => {
 	const search = useSelector(selectSearch);
 
 	const handleSearch = (e) => {
-		dispatch(setSearch(e.target.value))
+		dispatch(setSearch(e.target.value));
 	}
 
 	return (
 		<InputContainer>
 			<IoSearch />
-			<Input onChange={handleSearch} value={search} />
+			<Input
+				onChange={handleSearch}
+				value={search} />
 		</InputContainer>
 	);
 };
